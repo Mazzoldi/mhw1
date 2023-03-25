@@ -1,0 +1,212 @@
+#Aggiornamento{
+    font-size: 0.75em;
+    margin: 0;
+}
+.Articolo{
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    margin: 0px 0px 20px 0px;
+    text-align: left;
+}
+#Autore{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-bottom: 60px;
+}
+#Barra{
+    align-items: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    height: 75px;
+    justify-content: space-around;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#Barra a{
+    border: 1px solid rgb(208, 218, 121);
+    border-radius: 46.5px;
+    color: rgb(208, 218, 121);
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    width: 130px;
+}
+#Barra a:hover{
+    background-color: rgba(208, 218, 121, 0.75);
+    color: white;
+}
+body{
+    background-color: rgba(208, 218, 121, 0.75);
+    color: rgba(26, 26, 26, 0.7);
+    margin: 0;
+    text-align: center;
+}
+.Conclusione{
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0px 0px 20px 0px;
+    text-align: left;
+}
+.Contenuto{
+    display: flex;
+    margin-bottom: 120px;
+}
+#Corpo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: calc(66.67vw + 80px); /**/
+}
+#Footer{
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    width: 100vw;
+}
+#Footer p{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#Foto{
+    background-image: url(Foto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 98px; /*Per ottenere insieme al bordo di 1px un diametro di 100px precisi*/
+    margin-top: -50px;
+    width: 98px; /*Per ottenere insieme al bordo di 1px un diametro di 100px precisi*/
+    z-index: 2;
+}
+#Header{
+    background-image: url(Copertina.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(208, 218, 121);
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    height: 500px;
+    margin: 0;
+    position: relative;
+}
+html{
+    font-size: 20px;
+}
+.Intestazione{
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#Menu{
+    cursor: pointer;
+    display: none;
+    margin: 25px 30px 0px 0px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#Menu div{
+    background-color: rgb(208, 218, 121);
+    height: 3px;
+    margin: 5px 0px;
+    width: 25px;
+}
+.Nome{
+    font-size: 2em;
+    margin: 0;
+}
+#NomeCognome{
+    font-size: 1em;
+    margin: 0;
+}
+.Numero{
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+}
+#Overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+.Paragrafo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    margin-left: 40px;
+    padding: 0;
+    width: calc(100% - 80px);
+}
+.Paragrafo img{
+    height: auto;
+    width: 100%;
+}
+.Periodo{
+    font-size: 1em;
+    margin: 0;
+}
+#Titolo{
+    font-weight: normal;
+    font-size: 1em;
+    margin: 0;
+    max-width: 780px;
+}
+@media (max-width: 800px) {
+    .Articolo{
+        font-size: 0.75rem;
+    }
+    #Autore{
+        margin-bottom: 30px;
+    }
+    #Barra a{
+        display: none;
+    }
+    .Conclusione{
+        font-size: 0.75rem;
+    }
+    .Contenuto{
+        margin-bottom: 60px;
+    }
+    #Corpo{
+        margin: 0px 10px;
+        width: calc(100vw - 20px);
+    }
+    #Menu{
+        display: block;
+    }
+    .Nome{
+        font-size: 1em;
+    }
+    .Numero{
+        width: 20px;
+        font-size: 1em;
+    }
+    .Paragrafo{
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+    .Periodo{
+        font-size: 0.75em;
+    }
+}
