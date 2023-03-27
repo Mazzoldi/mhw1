@@ -5,6 +5,7 @@
 .Articolo{
     font-family: 'Playfair Display', serif;
     font-size: 1em;
+    line-height: 30px;
     margin: 0px 0px 20px 0px;
     text-align: left;
 }
